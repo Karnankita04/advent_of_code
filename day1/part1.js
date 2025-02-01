@@ -1,4 +1,4 @@
-const data = Deno.readTextFileSync('numbers.txt');
+const data = Deno.readTextFileSync("input.txt");
 
 const findFuelRequired = (totalFuelRequired, mass) => {
   return totalFuelRequired + Math.floor(mass / 3) - 2;
