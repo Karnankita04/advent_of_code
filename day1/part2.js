@@ -15,3 +15,5 @@ const calculateFuelRequirement = (totalFuelRequired,mass) => {
 const fuel = data.split("\n").reduce(calculateFuelRequirement, 0);
 
 console.log(fuel);
+
+const main
