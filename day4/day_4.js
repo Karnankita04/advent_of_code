@@ -1,8 +1,15 @@
 const areAdjacentDigitsSame = (array) => {
-  return array.some((num, index) => {
-    if (index === array.length - 1) return false;
-    return num === array[index + 1];
-  });
+  for (let index = 0; index < array.length; index++) {
+    if (
+      array[index] === array[index + 1] &&
+      array[index] !== array[index + 2] &&
+      array[index] !== array[index - 1]
+    ) {
+      return true;
+    }
+  }
+
+  return false;
 };
 
 const areInIncreasingOrder = (array) => {
@@ -22,7 +29,7 @@ const main = (range1, range2) => {
       count++;
     }
   }
-  
+
   return count;
 };
 
